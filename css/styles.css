@@ -286,6 +286,7 @@ fill: var(--acent-color);
     color: var(--primary-text-color);
     margin-top: 30px;
     margin-bottom: 10px;
+    
 }
 .benefits .text {
     font-size: 14px;
@@ -313,6 +314,7 @@ height: 120px;
 background-repeat: no-repeat;
 background-position: center;
 background-color: #F5F4FA;
+
 
 }
 .icon-antena::before{
@@ -471,6 +473,7 @@ background-image: url(../images/astronaut.png);
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .item-clients{
     width: 170px;
@@ -491,35 +494,25 @@ margin-left: 30px;
     justify-content: center;
     align-items: center;
     color: #afb1b8;
-    transition: color var(--transition-time) var(--cubic),
-    border-color var(--transition-time) var(--cubic);
+    transition: var(--transition-time) var(--cubic);
     
 }
-/* .item-clients:hover .icon-clients,
-.item-clients:focus .icon-clients{
+
+.link-clients:focus ,
+.link-clients:hover  {
+    transform: border-color, color;
 
     border-color: var(--acent-color);
-} */
-.link-clients:hover,
-.link-clients:focus {
-
-border-color: var(--acent-color);
+    color: var(--acent-color);
 }
+
 .icon-clients {
     width: 106px;
     height: 60px;
     fill: #AFB1B8;
-    /* transition: color var(--transition-time) var(--cubic); */
+    transition: fill var(--transition-time) var(--cubic);
+    fill: currentColor;
 }
-.link-clients:hover .icon-clients,
-.link-clients:focus .icon-clients{
-fill: var(--acent-color);
-
-}
-/* .icon-clients:focus,
-.icon-clients:hover{
-    fill: var(--acent-color);
-} */
 
 
 
